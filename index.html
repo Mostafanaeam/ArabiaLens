@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArabiaLens - Explore Arab Countries</title>
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts: Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/2/2c/Globe_icon.svg"
+      type="image/svg+xml"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container header-content">
+        <div class="logo">
+          <i class="fas fa-camera-retro"></i>
+          <span id="logo-text">ArabiaLens</span>
+        </div>
+        <div class="header-controls">
+          <button
+            id="lang-toggle"
+            class="theme-btn"
+            aria-label="Toggle Language"
+          >
+            EN/AR
+          </button>
+          <button
+            id="theme-toggle"
+            class="theme-btn"
+            aria-label="Toggle Dark/Light Mode"
+          >
+            <i class="fas fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero / Countries Section -->
+    <main>
+      <section class="hero-section">
+        <div class="container hero-content">
+          <h1 class="page-title" id="hero-title">
+            Discover the <span class="highlight">Arab World</span>
+          </h1>
+          <p class="hero-subtitle" id="hero-subtitle">
+            Explore the rich heritage, culture, and beauty of Arab nations.
+          </p>
+
+          <div class="countries-grid" id="countries-grid">
+            <!-- Dynamic Content will be injected here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Country Detail Modal -->
+      <div id="country-modal" class="modal-overlay">
+        <div class="modal-content">
+          <button id="close-modal" class="close-btn">&times;</button>
+          <div class="modal-body">
+            <!-- Dynamic Content -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Mandatory About Section -->
+      <!-- ================= (جديد) قسم عني About ================= -->
+      <div class="container" id="about">
+        <h2 class="section-title">من أنا؟ 👨‍💻</h2>
+        <div class="about-section">
+          <div class="about-image">
+            <!-- صورة افتراضية -->
+            <img src="myself.svg" alt="Mostafa Abd El-naeam" />
+          </div>
+          <div class="about-info">
+            <h3>Mostafa Abd El-naeam</h3>
+            <span class="job-title"
+              >MEAN Stack Developer | Technical Instructor | Startup
+              Founder</span
+            >
+            <p>
+              مطور ويب متخصص في بناء تطبيقات الـ Front-End باستخدام Angular، مع
+              توسّع تدريجي في الـ Back-End وتقنيات الأتمتة. مؤسس Code Journey،
+              وهي مبادرة تعليمية تقدّم تدريبًا عمليًا في البرمجة وتطوير المهارات
+              الرقمية.
+            </p>
+            <p>
+              أقود فرق تقنية وتعليمية، وأمتلك خبرة في التدريب، التوجيه، وبناء
+              المناهج. شغلي دايمًا مبني على التنظيم، التفكير الاستراتيجي،
+              والنتائج القابلة للقياس. اشتغلت في مبادرات وجمعيات جامعية وتقنية،
+              وقدمت برامج تطوير للطلاب والمجتمعات.
+            </p>
+            <p>
+              أركز حاليًا على تطوير مهارتي كمبرمج، تحسين أنظمة العمل لدي، وبناء
+              مسار مهني قوي في التعليم التقني وبناء المنتجات.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Mandatory Footer Section -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column about-column">
+            <h4><i class="fas fa-rocket"></i> عن Code Journey</h4>
+            <p>
+              مبادرة تعليمية أسسها مصطفى عبد النعيم لتمكين الشباب من دخول عالم
+              البرمجة بخطوات عملية.
+            </p>
+          </div>
+          <div class="footer-column contact-column">
+            <h4><i class="fas fa-envelope"></i> تواصل معي شخصيًا</h4>
+            <ul class="contact-list">
+              <li>
+                <i class="fab fa-whatsapp"></i
+                ><a href="https://wa.me/201114938410" target="_blank">واتساب</a>
+              </li>
+              <li>
+                <i class="fas fa-at"></i
+                ><a href="mailto:mnaeam10@gmail.com">mnaeam10@gmail.com</a>
+              </li>
+              <li>
+                <i class="fas fa-globe"></i
+                ><a href="https://mostafa-naeam.vercel.app/" target="_blank"
+                  >الموقع الرسمي</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column follow-column">
+            <h4><i class="fas fa-share-alt"></i> تابعنا</h4>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/mostafanaeam/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Mostafanaeam" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/code-journey25/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i><span>CJ</span></a
+              >
+              <a href="https://wa.me/201555303227" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Code Journey | تم التطوير بحب ❤️ بواسطة مصطفى عبد
+            النعيم.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
